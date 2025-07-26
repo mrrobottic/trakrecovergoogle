@@ -36,11 +36,8 @@ export function Header() {
         </nav>
 
         <div className="flex flex-1 items-center justify-end space-x-4">
-           <Button asChild variant="ghost">
-             <Link href="#">Log In</Link>
-           </Button>
           <Button asChild style={{backgroundColor: 'hsl(var(--accent))', color: 'hsl(var(--accent-foreground))'}}>
-            <Link href="/claim">Request a Demo</Link>
+            <Link href="/claim">Start a claim</Link>
           </Button>
 
           <Sheet>
@@ -66,11 +63,8 @@ export function Header() {
                       {link.label}
                     </Link>
                   ))}
-                   <Button asChild className="mt-4" variant="ghost">
-                     <Link href="#">Log In</Link>
-                   </Button>
                   <Button asChild className="mt-4" style={{backgroundColor: 'hsl(var(--accent))', color: 'hsl(var(--accent-foreground))'}}>
-                     <Link href="/claim">Request a Demo</Link>
+                     <Link href="/claim">Start a claim</Link>
                   </Button>
                 </nav>
               </div>
