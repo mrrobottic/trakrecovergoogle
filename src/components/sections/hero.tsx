@@ -18,7 +18,7 @@ export function Hero() {
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                         <Button asChild size="lg" style={{backgroundColor: 'hsl(var(--accent))', color: 'hsl(var(--accent-foreground))'}}>
-                            <Link href="/claim">Start Your Free Consultation</Link>
+                            <Link href="/claim">Start Your Consultation</Link>
                         </Button>
                     </div>
                 </div>
