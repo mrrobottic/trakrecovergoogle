@@ -25,7 +25,7 @@ const teamMembers = [
   {
     name: 'Dr. Emily Carter',
     role: 'Behavioral Analyst & Client Support',
-    avatar: 'https://images.unsplash.com/photo-1557862921-37829c790f19?w=150&h=150&fit=crop&q=80',
+    avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&q=80',
     aiHint: 'woman therapist',
     bio: "Emily's background in psychology helps us understand scammers' tactics and provide compassionate, effective support to our clients through difficult times.",
   },
