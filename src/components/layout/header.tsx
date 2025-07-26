@@ -5,6 +5,7 @@ import { Menu, ShieldCheck } from 'lucide-react';
 
 export function Header() {
   const navLinks = [
+    { href: '/', label: 'Home' },
     { href: '/services', label: 'Services' },
     { href: '/testimonials', label: 'Testimonials' },
     { href: '/faq', label: 'FAQ' },
