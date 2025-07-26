@@ -20,7 +20,7 @@ const services = [
     icon: <Search className="h-8 w-8 text-accent" />,
     title: "Scam Analysis & Investigation",
     description: "Understanding the scam is the first step to dismantling it. Our investigators analyze every detail of your case, from transaction records to communication logs, to build a strong foundation for recovery efforts. We trace the digital and financial footprints left by scammers to identify them and locate your money.",
-    image: "https://images.unsplash.com/photo-1586470253333-34914a243b8a?q=80&w=1470&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=1470&auto=format&fit=crop",
     aiHint: "digital investigation",
   },
   {
