@@ -41,6 +41,12 @@ export function Footer() {
                 </a>
               </li>
               <li className="flex items-center gap-2">
+                <Mail size={16} className="text-muted-foreground" />
+                <a href="mailto:Help@trakmint.com" className="text-sm text-muted-foreground hover:text-foreground">
+                  Help@trakmint.com
+                </a>
+              </li>
+              <li className="flex items-center gap-2">
                 <Phone size={16} className="text-muted-foreground" />
                 <span className="text-sm text-muted-foreground">+1 (800) 555-0199</span>
               </li>
