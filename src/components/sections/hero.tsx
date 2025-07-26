@@ -26,7 +26,7 @@ export function Hero() {
                     <div className="absolute w-72 h-72 bg-accent/20 rounded-full blur-3xl -translate-x-12"></div>
                     <div className="absolute w-72 h-72 bg-primary/10 rounded-full blur-3xl translate-x-12"></div>
                     <Image
-                        src="https://placehold.co/600x600.png"
+                        src="https://source.unsplash.com/600x600/?hope,person"
                         alt="Hero Image"
                         width={600}
                         height={600}
