@@ -3,22 +3,22 @@ import { MotionDiv } from "@/components/motion-div";
 
 const steps = [
     {
-        icon: <FileText className="h-10 w-10 text-primary-foreground" />,
+        icon: <FileText className="h-10 w-10 text-accent" />,
         title: "Submit Your Case",
         description: "Fill out our confidential online form with the details of your situation. The more information you provide, the better we can assess your case."
     },
     {
-        icon: <ClipboardCheck className="h-10 w-10 text-primary-foreground" />,
+        icon: <ClipboardCheck className="h-10 w-10 text-accent" />,
         title: "Free Evaluation",
         description: "Our experts will review your submission free of charge to determine the viability of your claim and outline a potential strategy."
     },
     {
-        icon: <Search className="h-10 w-10 text-primary-foreground" />,
+        icon: <Search className="h-10 w-10 text-accent" />,
         title: "Recovery in Action",
         description: "Once you approve, our team gets to work. We use advanced techniques to trace, confront, and recover your lost assets."
     },
     {
-        icon: <DollarSign className="h-10 w-10 text-primary-foreground" />,
+        icon: <DollarSign className="h-10 w-10 text-accent" />,
         title: "Funds Returned",
         description: "We fight to get your money back. Upon successful recovery, we ensure the funds are securely returned to you, minus our agreed-upon success fee."
     }
@@ -52,8 +52,10 @@ export function HowItWorks() {
                             viewport={{ once: true }}
                             className="text-center p-6 relative"
                         >
-                             <div className="absolute top-8 left-1/2 -ml-px h-full w-0.5 bg-primary-foreground/20 -z-10 hidden lg:block"></div>
-                             <div className="relative bg-primary inline-block p-4 rounded-full border-2 border-primary-foreground mb-4 z-10">
+                             {index < steps.length - 1 && 
+                                <div className="hidden lg:block absolute top-1/2 left-1/2 -translate-y-1/2 w-full h-0.5 bg-primary-foreground/20" style={{left: '50%', transform: 'translateY(-50%)'}}></div>
+                             }
+                             <div className="relative bg-primary inline-block p-4 rounded-full border-2 border-accent mb-4 z-10">
                                 {step.icon}
                             </div>
                             <h3 className="font-bold text-xl mb-2">{step.title}</h3>
