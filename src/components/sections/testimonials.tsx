@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -31,6 +32,27 @@ const testimonials = [
     title: "They exceeded all expectations",
     quote: "I was skeptical at first, but their transparent process and constant communication put me at ease. Not only did they recover my money, but they also educated me on how to stay safe in the future.",
   },
+  {
+    name: "The Chen Family",
+    avatar: "https://placehold.co/100x100.png",
+    aiHint: "happy family",
+    title: "Saved our home deposit",
+    quote: "We were victims of a real estate wire fraud and almost lost the down payment for our dream home. TRAKMINT's rapid response and coordination with the banks was instrumental in freezing and returning our funds.",
+  },
+  {
+    name: "David B.",
+    avatar: "https://placehold.co/100x100.png",
+    aiHint: "man thinking",
+    title: "Crypto scam recovery experts",
+    quote: "I dove into crypto and got burned by a fake exchange. I thought the money was untraceable. TRAKMINT's blockchain analysis team proved me wrong. They traced the transactions and helped me recover a significant portion.",
+  },
+  {
+    name: "Maria G.",
+    avatar: "https://placehold.co/100x100.png",
+    aiHint: "smiling woman",
+    title: "Empathetic and successful",
+    quote: "I was targeted by an impersonation scam and felt so foolish. TRAKMINT never made me feel judged. They were supportive and, most importantly, successful in getting my money back from the mule accounts.",
+  }
 ];
 
 export function Testimonials() {
@@ -59,7 +81,7 @@ export function Testimonials() {
                   <Card className="h-full flex flex-col">
                     <CardHeader className="flex flex-row items-center gap-4 pb-4">
                       <Avatar className="h-16 w-16">
-                        <AvatarImage src={testimonial.avatar} alt={testimonial.name} data-ai-hint={testimonial.aiHint} />
+                        <Image src={testimonial.avatar} alt={testimonial.name} width={64} height={64} data-ai-hint={testimonial.aiHint} />
                         <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
                       </Avatar>
                       <div>
