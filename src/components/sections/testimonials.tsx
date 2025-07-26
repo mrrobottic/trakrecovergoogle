@@ -5,13 +5,6 @@ import Image from "next/image";
 
 const testimonials = [
   {
-    name: "John D.",
-    avatar: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bWFuJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzUzNDcxNTIzfDA&ixlib=rb-4.1.0&q=80&w=1080",
-    aiHint: "man portrait",
-    title: "Recovered my life savings",
-    quote: "I thought my retirement fund was gone forever after a sophisticated investment scam. TRAKMINT was professional, compassionate, and incredibly effective. They recovered over 90% of my funds.",
-  },
-  {
     name: "Sarah L.",
     avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc1MzQ3NzQyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
     aiHint: "woman portrait",
@@ -34,7 +27,7 @@ const testimonials = [
   },
   {
     name: "The Chen Family",
-    avatar: "https://images.unsplash.com/photo-1574334354266-935a2d1a3989?w=100&h=100&fit=crop&q=80",
+    avatar: "https://images.unsplash.com/photo-1679043871333-b785bd519ad3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxoYXBweSUyMGZhbWlseXxlbnwwfHx8fDE3NTM1MDAxMDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
     aiHint: "happy family",
     title: "Saved our home deposit",
     quote: "We were victims of a real estate wire fraud and almost lost the down payment for our dream home. TRAKMINT's rapid response and coordination with the banks was instrumental in freezing and returning our funds.",

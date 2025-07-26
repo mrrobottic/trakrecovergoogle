@@ -9,13 +9,6 @@ import { Button } from '@/components/ui/button';
 
 const testimonials = [
   {
-    name: "John D.",
-    avatar: "https://images.unsplash.com/photo-1564564321837-a57b7070ac5c?w=100&h=100&fit=crop&q=80",
-    aiHint: "man portrait",
-    title: "Recovered my life savings",
-    quote: "I thought my retirement fund was gone forever after a sophisticated investment scam. TRAKMINT was professional, compassionate, and incredibly effective. They recovered over 90% of my funds.",
-  },
-  {
     name: "Sarah L.",
     avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&q=80",
     aiHint: "woman portrait",
