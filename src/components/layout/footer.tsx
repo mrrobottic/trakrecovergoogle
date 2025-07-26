@@ -19,8 +19,8 @@ export function Footer() {
             <h3 className="font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li><Link href="/claim" className="text-sm text-muted-foreground hover:text-foreground">Start a Claim</Link></li>
-              <li><Link href="#services" className="text-sm text-muted-foreground hover:text-foreground">Our Services</Link></li>
-              <li><Link href="#faq" className="text-sm text-muted-foreground hover:text-foreground">FAQ</Link></li>
+              <li><Link href="/services" className="text-sm text-muted-foreground hover:text-foreground">Our Services</Link></li>
+              <li><Link href="/faq" className="text-sm text-muted-foreground hover:text-foreground">FAQ</Link></li>
               <li><Link href="/risk-assessment" className="text-sm text-muted-foreground hover:text-foreground">Risk Assessment</Link></li>
               <li><Link href="/about-us" className="text-sm text-muted-foreground hover:text-foreground">About Us</Link></li>
             </ul>
@@ -28,8 +28,8 @@ export function Footer() {
           <div>
             <h3 className="font-semibold mb-4">Legal</h3>
             <ul className="space-y-2">
-              <li><Link href="#" className="text-sm text-muted-foreground hover:text-foreground">Privacy Policy</Link></li>
-              <li><Link href="#" className="text-sm text-muted-foreground hover:text-foreground">Terms of Service</Link></li>
+              <li><Link href="/privacy-policy" className="text-sm text-muted-foreground hover:text-foreground">Privacy Policy</Link></li>
+              <li><Link href="/terms-of-service" className="text-sm text-muted-foreground hover:text-foreground">Terms of Service</Link></li>
             </ul>
           </div>
           <div>

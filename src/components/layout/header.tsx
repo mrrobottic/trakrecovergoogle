@@ -5,9 +5,9 @@ import { Menu, ShieldCheck } from 'lucide-react';
 
 export function Header() {
   const navLinks = [
-    { href: '#services', label: 'Services' },
-    { href: '#testimonials', label: 'Testimonials' },
-    { href: '#faq', label: 'FAQ' },
+    { href: '/services', label: 'Services' },
+    { href: '/testimonials', label: 'Testimonials' },
+    { href: '/faq', label: 'FAQ' },
     { href: '/risk-assessment', label: 'Risk Assessment' },
     { href: '/about-us', label: 'About Us' },
   ];
