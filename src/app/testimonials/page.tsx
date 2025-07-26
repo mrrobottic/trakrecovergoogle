@@ -80,7 +80,7 @@ const TestimonialsPage = () => {
                 <div className="container">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {testimonials.map((testimonial, index) => (
-                            <Card key={index} className="h-full flex flex-col shadow-lg hover:shadow-xl transition-shadow duration-300">
+                            <Card key={index} className="h-full flex flex-col shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
                                 <CardHeader className="flex flex-row items-center gap-4 pb-4">
                                 <Avatar className="h-16 w-16">
                                     <Image src={testimonial.avatar} alt={testimonial.name} width={64} height={64} data-ai-hint={testimonial.aiHint} className="object-cover"/>
@@ -109,7 +109,7 @@ const TestimonialsPage = () => {
                   If you've been a victim of a scam, don't wait. Contact us today for a free, confidential consultation. Let us help you become our next success story.
                 </p>
                 <div className="mt-8">
-                  <Button asChild size="lg" variant="secondary" style={{backgroundColor: 'hsl(var(--accent))', color: 'hsl(var(--accent-foreground))'}} className="font-bold text-lg py-7 px-10">
+                  <Button asChild size="lg" variant="secondary" style={{backgroundColor: 'hsl(var(--accent))', color: 'hsl(var(--accent-foreground))'}} className="shimmer-button font-bold text-lg py-7 px-10">
                     <Link href="/claim">Get My Free Consultation</Link>
                   </Button>
                 </div>

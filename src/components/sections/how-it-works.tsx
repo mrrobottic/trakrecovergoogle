@@ -60,15 +60,19 @@ export function HowItWorks() {
                         {steps.map((step, index) => (
                             <MotionDiv 
                                 key={index}
-                                initial={{ opacity: 0, y: 50 }}
-                                whileInView={{ opacity: 1, y: 0 }}
+                                initial={{ opacity: 0, y: 50, scale: 0.9 }}
+                                whileInView={{ opacity: 1, y: 0, scale: 1 }}
                                 transition={{ duration: 0.5, ease: "easeOut", delay: index * 0.1 }}
                                 viewport={{ once: true }}
                                 className="text-center p-6 relative"
                             >
-                                <div className="relative bg-primary inline-block p-4 rounded-full border-2 border-accent mb-4 z-10">
+                                <MotionDiv 
+                                    className="relative bg-primary inline-block p-4 rounded-full border-2 border-accent mb-4 z-10"
+                                    whileHover={{ scale: 1.1, rotate: 10 }}
+                                    transition={{ type: "spring", stiffness: 300 }}
+                                >
                                     {step.icon}
-                                </div>
+                                </MotionDiv>
                                 <h3 className="font-bold text-xl mb-2">{step.title}</h3>
                                 <p className="text-primary-foreground/80">{step.description}</p>
                             </MotionDiv>

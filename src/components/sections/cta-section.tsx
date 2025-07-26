@@ -18,7 +18,7 @@ export function CtaSection() {
             Start your free, no-obligation consultation today and find out how we can help.
           </p>
           <div className="mt-8">
-            <Button asChild size="lg" variant="secondary" style={{backgroundColor: 'hsl(var(--accent))', color: 'hsl(var(--accent-foreground))'}} className="font-bold text-lg py-7 px-10 transform hover:scale-105 transition-transform duration-300">
+            <Button asChild size="lg" variant="secondary" style={{backgroundColor: 'hsl(var(--accent))', color: 'hsl(var(--accent-foreground))'}} className="shimmer-button font-bold text-lg py-7 px-10 transform hover:scale-105 transition-transform duration-300">
               <Link href="/claim">Start My Recovery Claim Now</Link>
             </Button>
           </div>

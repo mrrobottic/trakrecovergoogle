@@ -11,7 +11,7 @@ export function Hero() {
           style={{
             backgroundImage: "url('/grid.svg')",
             backgroundRepeat: 'repeat',
-            opacity: 0.1,
+            opacity: 0.05,
           }}>
         </div>
         <div className="container relative z-10">
@@ -25,7 +25,7 @@ export function Hero() {
                         Fallen victim to a scam? You&apos;re not alone. Our expert team is here to help you navigate the recovery process and reclaim what&apos;s rightfully yours.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        <Button asChild size="lg" style={{backgroundColor: 'hsl(var(--accent))', color: 'hsl(var(--accent-foreground))'}} className="transform hover:scale-105 transition-transform duration-300 font-bold text-lg py-7 px-8">
+                        <Button asChild size="lg" style={{backgroundColor: 'hsl(var(--accent))', color: 'hsl(var(--accent-foreground))'}} className="shimmer-button transform hover:scale-105 transition-transform duration-300 font-bold text-lg py-7 px-8">
                             <Link href="/claim">Start a Free Consultation</Link>
                         </Button>
                         <Button asChild size="lg" variant="outline" className="text-lg py-7 px-8">

@@ -117,7 +117,7 @@ const AboutUsPage = () => {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {teamMembers.map((member, index) => (
-                <Card key={index} className="text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <Card key={index} className="text-center shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
                   <CardContent className="pt-6">
                     <Avatar className="w-24 h-24 mx-auto mb-4">
                       <Image src={member.avatar} alt={member.name} width={96} height={96} data-ai-hint={member.aiHint} className="object-cover" />
