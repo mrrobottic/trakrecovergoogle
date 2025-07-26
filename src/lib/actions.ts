@@ -5,7 +5,7 @@ import { z } from 'zod';
 const ClaimFormSchema = z.object({
   fullName: z.string().min(2, "Full name must be at least 2 characters."),
   email: z.string().email("Invalid email address."),
-  phone: z.string().optional(),
+  phone: z.string().min(1, "Phone number is required."),
   scamType: z.string().min(1, "Please select a scam type."),
   dateOfIncident: z.string().min(1, "Please provide the date of the incident."),
   amountLost: z.coerce.number().min(1, "Amount lost must be greater than 0."),
