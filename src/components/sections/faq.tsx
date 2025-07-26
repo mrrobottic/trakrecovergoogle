@@ -32,7 +32,7 @@ const faqs = [
 
 export function Faq() {
   return (
-    <section id="faq" className="py-20 md:py-28 bg-card">
+    <section id="faq" className="py-20 md:py-28 bg-background">
       <div className="container max-w-3xl mx-auto">
         <MotionDiv
           initial={{ opacity: 0, y: 50 }}
