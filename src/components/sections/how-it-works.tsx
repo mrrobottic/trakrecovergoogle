@@ -26,14 +26,26 @@ const steps = [
 
 export function HowItWorks() {
     return (
-        <section id="how-it-works" className="py-20 md:py-28 bg-primary text-primary-foreground">
-            <div className="container">
+        <section 
+            id="how-it-works" 
+            className="py-20 md:py-28 bg-primary text-primary-foreground relative overflow-hidden"
+        >
+             <div 
+                className="absolute inset-0 z-0" 
+                style={{
+                    backgroundImage: "url('/grid.svg')",
+                    backgroundRepeat: 'repeat',
+                    opacity: 0.05,
+                    transform: 'scale(1.5)',
+                }}>
+            </div>
+            <div className="container relative z-10">
                 <MotionDiv 
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, ease: "easeOut" }}
                     viewport={{ once: true }}
-                    className="text-center mb-12"
+                    className="text-center mb-16"
                 >
                     <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline">
                         How It Works: Our 4-Step Process
@@ -42,26 +54,26 @@ export function HowItWorks() {
                         We've streamlined the recovery process to be as clear and stress-free as possible. Here's how we help you get your money back.
                     </p>
                 </MotionDiv>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    {steps.map((step, index) => (
-                        <MotionDiv 
-                            key={index}
-                            initial={{ opacity: 0, y: 50 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.5, ease: "easeOut", delay: index * 0.1 }}
-                            viewport={{ once: true }}
-                            className="text-center p-6 relative"
-                        >
-                             {index < steps.length - 1 && 
-                                <div className="hidden lg:block absolute top-1/2 left-1/2 -translate-y-1/2 w-full h-0.5 bg-primary-foreground/20" style={{left: '50%', transform: 'translateY(-50%)'}}></div>
-                             }
-                             <div className="relative bg-primary inline-block p-4 rounded-full border-2 border-accent mb-4 z-10">
-                                {step.icon}
-                            </div>
-                            <h3 className="font-bold text-xl mb-2">{step.title}</h3>
-                            <p className="text-primary-foreground/80">{step.description}</p>
-                        </MotionDiv>
-                    ))}
+                <div className="relative">
+                     <div className="hidden lg:block absolute top-1/2 left-0 w-full h-0.5 bg-primary-foreground/20" style={{transform: 'translateY(-50%)'}}></div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        {steps.map((step, index) => (
+                            <MotionDiv 
+                                key={index}
+                                initial={{ opacity: 0, y: 50 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5, ease: "easeOut", delay: index * 0.1 }}
+                                viewport={{ once: true }}
+                                className="text-center p-6 relative"
+                            >
+                                <div className="relative bg-primary inline-block p-4 rounded-full border-2 border-accent mb-4 z-10">
+                                    {step.icon}
+                                </div>
+                                <h3 className="font-bold text-xl mb-2">{step.title}</h3>
+                                <p className="text-primary-foreground/80">{step.description}</p>
+                            </MotionDiv>
+                        ))}
+                    </div>
                 </div>
             </div>
         </section>
