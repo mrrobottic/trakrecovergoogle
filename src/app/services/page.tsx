@@ -13,8 +13,8 @@ const services = [
     icon: <DollarSign className="h-8 w-8 text-accent" />,
     title: "Comprehensive Fund Recovery",
     description: "Our primary mission is to reunite you with your stolen funds. We employ a multi-faceted approach combining advanced tracing technology, financial expertise, and established relationships with financial institutions and law enforcement agencies to maximize the chances of recovery.",
-    image: "https://images.unsplash.com/photo-1639754502598-a03dc3d51873?q=80&w=1470&auto=format&fit=crop",
-    aiHint: "financial protection",
+    image: "https://images.unsplash.com/photo-1554224155-8d04421a1f33?q=80&w=1470&auto=format&fit=crop",
+    aiHint: "financial security",
   },
   {
     icon: <Search className="h-8 w-8 text-accent" />,
