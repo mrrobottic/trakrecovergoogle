@@ -1,4 +1,4 @@
-# Firebase Studio
+# TRAKMINT
 
 This is a NextJS starter in Firebase Studio.
 

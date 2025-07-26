@@ -1,9 +1,10 @@
 import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
+import Script from 'next/script';
 
 export const metadata: Metadata = {
-  title: 'RecoverEase',
+  title: 'TRAKMINT',
   description: 'Reclaim your funds and fight back against scammers.',
 };
 
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body className="font-body antialiased">
         {children}
         <Toaster />
+        <Script id="chatway" async={true} src="https://cdn.chatway.app/widget.js?id=u0OeT3BBBCxB"></Script>
       </body>
     </html>
   );

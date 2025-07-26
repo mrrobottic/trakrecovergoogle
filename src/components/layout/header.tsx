@@ -5,9 +5,11 @@ import { Menu, ShieldCheck } from 'lucide-react';
 
 export function Header() {
   const navLinks = [
-    { href: '#services', label: 'Services' },
-    { href: '#testimonials', label: 'Testimonials' },
-    { href: '#faq', label: 'FAQ' },
+    { href: '/services', label: 'Services' },
+    { href: '/testimonials', label: 'Testimonials' },
+    { href: '/faq', label: 'FAQ' },
+    { href: '/risk-assessment', label: 'Risk Assessment' },
+    { href: '/about-us', label: 'About Us' },
   ];
 
   return (
@@ -16,7 +18,7 @@ export function Header() {
         <div className="mr-4 flex items-center">
           <Link href="/" className="mr-6 flex items-center space-x-2">
             <ShieldCheck className="h-6 w-6 text-primary" />
-            <span className="font-bold">RecoverEase</span>
+            <span className="font-bold">TRAKMINT</span>
           </Link>
         </div>
 
@@ -48,7 +50,7 @@ export function Header() {
               <div className="flex flex-col p-4">
                 <Link href="/" className="mb-8 flex items-center space-x-2">
                   <ShieldCheck className="h-6 w-6 text-primary" />
-                  <span className="font-bold">RecoverEase</span>
+                  <span className="font-bold">TRAKMINT</span>
                 </Link>
                 <nav className="flex flex-col space-y-4">
                   {navLinks.map(link => (
