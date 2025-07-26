@@ -8,21 +8,21 @@ const testimonials = [
     avatar: "https://placehold.co/100x100.png",
     aiHint: "man portrait",
     title: "Recovered my life savings",
-    quote: "I thought my retirement fund was gone forever after a sophisticated investment scam. RecoverEase was professional, compassionate, and incredibly effective. They recovered over 90% of my funds.",
+    quote: "I thought my retirement fund was gone forever after a sophisticated investment scam. TRAKMINT was professional, compassionate, and incredibly effective. They recovered over 90% of my funds.",
   },
   {
     name: "Sarah L.",
     avatar: "https://placehold.co/100x100.png",
     aiHint: "woman portrait",
     title: "A light in the darkness",
-    quote: "After falling for a romance scam, I was devastated and ashamed. The team at RecoverEase treated me with respect and worked tirelessly on my case. I can't thank them enough for their support and results.",
+    quote: "After falling for a romance scam, I was devastated and ashamed. The team at TRAKMINT treated me with respect and worked tirelessly on my case. I can't thank them enough for their support and results.",
   },
   {
     name: "Mike P.",
     avatar: "https://placehold.co/100x100.png",
     aiHint: "person portrait",
     title: "Fast and efficient service",
-    quote: "My company was hit by a phishing attack that cost us thousands. RecoverEase's quick action and expertise were crucial in tracing and recovering the money. Highly recommended for any business.",
+    quote: "My company was hit by a phishing attack that cost us thousands. TRAKMINT's quick action and expertise were crucial in tracing and recovering the money. Highly recommended for any business.",
   },
     {
     name: "Emily R.",
@@ -42,7 +42,7 @@ export function Testimonials() {
             Success Stories from Our Clients
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-            We are dedicated to our clients' success. Here's what they have to say about their experience with RecoverEase.
+            We are dedicated to our clients' success. Here's what they have to say about their experience with TRAKMINT.
           </p>
         </div>
         <Carousel

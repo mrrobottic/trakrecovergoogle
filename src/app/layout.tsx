@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
 
 export const metadata: Metadata = {
-  title: 'RecoverEase',
+  title: 'TRAKMINT',
   description: 'Reclaim your funds and fight back against scammers.',
 };
 
