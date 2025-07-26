@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import Image from "next/image";
+import { ClaimForm } from '@/components/claim-form';
 
 export function Hero() {
   return (
@@ -22,17 +22,8 @@ export function Hero() {
                         </Button>
                     </div>
                 </div>
-                <div className="relative flex items-center justify-center">
-                    <div className="absolute w-72 h-72 bg-accent/20 rounded-full blur-3xl -translate-x-12"></div>
-                    <div className="absolute w-72 h-72 bg-primary/10 rounded-full blur-3xl translate-x-12"></div>
-                    <Image
-                        src="https://source.unsplash.com/600x600/?hope,person"
-                        alt="Hero Image"
-                        width={600}
-                        height={600}
-                        className="rounded-full shadow-2xl object-cover z-10"
-                        data-ai-hint="hopeful person"
-                    />
+                <div>
+                  <ClaimForm />
                 </div>
             </div>
         </div>
