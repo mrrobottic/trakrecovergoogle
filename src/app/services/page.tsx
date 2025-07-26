@@ -27,8 +27,8 @@ const services = [
     icon: <Briefcase className="h-8 w-8 text-accent" />,
     title: "Legal & Financial Liaison",
     description: "Navigating the complex worlds of finance and law can be daunting. We act as your expert intermediary, communicating with banks, cryptocurrency exchanges, and legal authorities on your behalf. Our team ensures all necessary reports are filed correctly and that your case is presented with the urgency it deserves.",
-    image: "https://images.unsplash.com/photo-1560518883-ce09059ee355?q=80&w=1373&auto=format&fit=crop",
-    aiHint: "legal finance",
+    image: "https://images.unsplash.com/photo-1505664194779-8beace729db0?q=80&w=1470&auto=format&fit=crop",
+    aiHint: "legal justice",
   },
   {
     icon: <GraduationCap className="h-8 w-8 text-accent" />,
