@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 export function CtaSection() {
   return (
     <section 
-      className="py-20 md:py-28 bg-cover bg-center bg-fixed"
+      className="relative py-20 md:py-28 bg-cover bg-center bg-fixed"
       style={{ backgroundImage: "url('https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=1470&auto=format&fit=crop')"}}
     >
       <div className="absolute inset-0 bg-primary/90"></div>
