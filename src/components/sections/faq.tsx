@@ -4,6 +4,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { MotionDiv } from "@/components/motion-div";
+
 
 const faqs = [
   {
@@ -30,29 +32,24 @@ const faqs = [
 
 export function Faq() {
   return (
-    <section id="faq" className="py-20 md:py-28 bg-card">
-      <div className="container max-w-3xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline">
-            Frequently Asked Questions
-          </h2>
-          <p className="mt-4 text-lg text-muted-foreground">
-            Have questions? We have answers. Here are some of the most common inquiries we receive.
-          </p>
-        </div>
-        <Accordion type="single" collapsible className="w-full">
-          {faqs.map((faq, index) => (
-            <AccordionItem key={index} value={`item-${index}`}>
-              <AccordionTrigger className="text-lg font-semibold text-left">
-                {faq.question}
-              </AccordionTrigger>
-              <AccordionContent className="text-base text-muted-foreground">
-                {faq.answer}
-              </AccordionContent>
-            </AccordionItem>
-          ))}
-        </Accordion>
-      </div>
-    </section>
+    <MotionDiv
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
+        viewport={{ once: true }}
+    >
+      <Accordion type="single" collapsible className="w-full">
+        {faqs.map((faq, index) => (
+          <AccordionItem key={index} value={`item-${index}`} className="border-b">
+            <AccordionTrigger className="text-lg font-semibold text-left hover:no-underline">
+              {faq.question}
+            </AccordionTrigger>
+            <AccordionContent className="text-base text-muted-foreground">
+              {faq.answer}
+            </AccordionContent>
+          </AccordionItem>
+        ))}
+      </Accordion>
+    </MotionDiv>
   );
 }
