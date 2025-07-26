@@ -34,7 +34,7 @@ const testimonials = [
   },
   {
     name: "The Chen Family",
-    avatar: "https://images.unsplash.com/photo-1679043871333-b785bd519ad3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxoYXBweSUyMGZhbWlseXxlbnwwfHx8fDE3NTM1MDAxMDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    avatar: "https://images.unsplash.com/photo-1574334354266-935a2d1a3989?w=100&h=100&fit=crop&q=80",
     aiHint: "happy family",
     title: "Saved our home deposit",
     quote: "We were victims of a real estate wire fraud and almost lost the down payment for our dream home. TRAKMINT's rapid response and coordination with the banks was instrumental in freezing and returning our funds.",
