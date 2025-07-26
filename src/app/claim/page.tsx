@@ -7,8 +7,8 @@ export default function ClaimPage() {
     <div className="flex min-h-screen flex-col bg-background">
       <Header />
       <main className="flex-1">
-        <div className="container py-12 md:py-20">
-          <div className="mx-auto max-w-3xl text-center">
+        <div className="py-12 md:py-20">
+          <div className="mx-auto max-w-3xl text-center px-4">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline">
               Start Your Recovery Claim
             </h1>
@@ -16,7 +16,7 @@ export default function ClaimPage() {
               Please provide as much detail as possible. All information is confidential and will be used solely for the purpose of assessing and processing your case.
             </p>
           </div>
-          <div className="mx-auto mt-12 max-w-3xl">
+          <div className="mx-auto mt-12 max-w-3xl px-4">
              <ClaimForm />
           </div>
         </div>
