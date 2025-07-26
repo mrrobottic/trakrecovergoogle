@@ -166,7 +166,7 @@ export function ClaimForm() {
                 Submitting...
               </>
             ) : (
-              'Get a Free Review'
+              'Start a claim'
             )}
           </Button>
         </form>
