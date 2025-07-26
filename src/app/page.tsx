@@ -6,6 +6,7 @@ import { Testimonials } from '@/components/sections/testimonials';
 import { HomeFaq } from '@/components/sections/home-faq';
 import { CtaSection } from '@/components/sections/cta-section';
 import { MotionDiv } from '@/components/motion-div';
+import { EducationalResources } from '@/components/sections/educational-resources';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <HowItWorks />
+        <EducationalResources />
         <HomeFaq />
         <Testimonials />
         <MotionDiv

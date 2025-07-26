@@ -28,7 +28,7 @@ const scamTypes = [
 
 export function EducationalResources() {
   return (
-    <section id="services" className="py-20 md:py-28 bg-primary text-primary-foreground">
+    <section id="services" className="py-20 md:py-28 bg-card">
         <div className="container">
             <div className="grid md:grid-cols-2 gap-12 items-center">
                 <MotionDiv
@@ -41,7 +41,7 @@ export function EducationalResources() {
                       <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline">
                         Know Your Enemy: Common Scams
                       </h2>
-                      <p className="mt-4 text-lg text-primary-foreground/80">
+                      <p className="mt-4 text-lg text-muted-foreground">
                         Knowledge is the first line of defense. Understand the tactics scammers use to protect yourself and your assets.
                       </p>
                       <ul className="mt-6 space-y-4">
