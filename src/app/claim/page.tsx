@@ -6,8 +6,8 @@ export default function ClaimPage() {
   return (
     <div className="flex min-h-screen flex-col bg-background">
       <Header />
-      <main className="flex-1 py-12 md:py-20">
-        <div className="container">
+      <main className="flex-1">
+        <div className="container py-12 md:py-20">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline">
               Start Your Recovery Claim
