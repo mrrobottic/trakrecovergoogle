@@ -4,7 +4,7 @@ import { ClaimForm } from '@/components/claim-form';
 
 export function Hero() {
   return (
-    <section className="relative w-full py-20 md:py-32 lg:py-40 bg-card overflow-hidden">
+    <section className="relative w-full py-16 md:py-24 lg:py-32 bg-card overflow-hidden">
         <div className="absolute inset-0 bg-primary/5 opacity-50"></div>
         <div className="container relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
