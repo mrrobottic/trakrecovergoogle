@@ -17,7 +17,7 @@ export function Hero() {
                         Fallen victim to a scam? You&apos;re not alone. Our expert team is here to help you navigate the recovery process and reclaim what&apos;s rightfully yours.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        <Button asChild size="lg" style={{backgroundColor: 'hsl(var(--accent))', color: 'hsl(var(--accent-foreground))'}}>
+                        <Button asChild size="lg" style={{backgroundColor: 'hsl(var(--accent))', color: 'hsl(var(--accent-foreground))'}} className="transform hover:scale-105 transition-transform duration-300">
                             <Link href="/claim">Start Your Consultation</Link>
                         </Button>
                     </div>

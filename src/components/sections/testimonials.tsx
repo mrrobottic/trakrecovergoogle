@@ -46,7 +46,7 @@ export function Testimonials() {
   return (
     <section 
         id="testimonials" 
-        className="py-20 md:py-28 bg-cover bg-center bg-fixed"
+        className="py-20 md:py-28 bg-cover bg-center"
         style={{ backgroundImage: "url('https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=1420&auto=format&fit=crop&ixlib=rb-4.0.3')"}}
     >
       <div className="container relative">
