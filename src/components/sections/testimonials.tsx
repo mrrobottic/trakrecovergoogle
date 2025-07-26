@@ -26,13 +26,6 @@ const testimonials = [
     quote: "I was skeptical at first, but their transparent process and constant communication put me at ease. Not only did they recover my money, but they also educated me on how to stay safe in the future.",
   },
   {
-    name: "The Chen Family",
-    avatar: "https://images.unsplash.com/photo-1679043871333-b785bd519ad3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxoYXBweSUyMGZhbWlseXxlbnwwfHx8fDE3NTM1MDAxMDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    aiHint: "happy family",
-    title: "Saved our home deposit",
-    quote: "We were victims of a real estate wire fraud and almost lost the down payment for our dream home. TRAKMINT's rapid response and coordination with the banks was instrumental in freezing and returning our funds.",
-  },
-  {
     name: "David B.",
     avatar: "https://images.unsplash.com/photo-1677180969142-52213a928941?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtYW4lMjB0aGlua2luZ3xlbnwwfHx8fDE3NTM1MDAxMDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
     aiHint: "man thinking",
