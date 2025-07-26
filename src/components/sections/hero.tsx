@@ -4,12 +4,12 @@ import { ClaimForm } from '@/components/claim-form';
 
 export function Hero() {
   return (
-    <section className="relative w-full py-16 md:py-24 lg:py-32 bg-card overflow-hidden">
-        <div className="absolute inset-0 bg-primary/5 opacity-50"></div>
+    <section className="relative w-full py-24 md:py-32 lg:py-40 bg-background overflow-hidden">
+        <div className="absolute inset-0 bg-blue-50/50 opacity-50"></div>
         <div className="container relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div className="space-y-6 text-center lg:text-left">
-                    <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl font-headline">
+                    <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl font-headline text-primary">
                         Reclaim Your Funds. <br />
                         Fight Back Against Scammers.
                     </h1>
@@ -22,7 +22,7 @@ export function Hero() {
                         </Button>
                     </div>
                 </div>
-                <div>
+                <div className="bg-white p-8 rounded-lg shadow-2xl">
                   <ClaimForm />
                 </div>
             </div>
