@@ -40,24 +40,24 @@ const teamMembers = [
 
 const values = [
     {
-        icon: <Target className="h-10 w-10 text-primary" />,
+        icon: <Target className="h-8 w-8 text-primary flex-shrink-0" />,
         title: "Our Mission",
-        description: "To provide a beacon of hope and a path to justice for victims of online scams. We dedicate our expertise to recovering stolen funds and empowering individuals to reclaim their financial security."
+        description: "To provide a beacon of hope and a path to justice for victims of online scams through dedicated expertise and unwavering support."
     },
     {
-        icon: <Lightbulb className="h-10 w-10 text-primary" />,
+        icon: <Lightbulb className="h-8 w-8 text-primary flex-shrink-0" />,
         title: "Our Vision",
-        description: "To create a world where scammers have nowhere to hide. We envision a future where robust recovery options and widespread education make online fraud a less viable crime for perpetrators."
+        description: "To create a world where scammers have nowhere to hide, making online fraud a less viable crime for perpetrators."
     },
     {
-        icon: <Users className="h-10 w-10 text-primary" />,
+        icon: <Users className="h-8 w-8 text-primary flex-shrink-0" />,
         title: "Our Commitment",
-        description: "To treat every client with empathy, respect, and unwavering dedication. We handle each case with the confidentiality and seriousness it deserves, fighting for the best possible outcome."
+        description: "To treat every client with empathy and respect, handling each case with the confidentiality and seriousness it deserves."
     },
     {
-        icon: <TrendingUp className="h-10 w-10 text-primary" />,
+        icon: <TrendingUp className="h-8 w-8 text-primary flex-shrink-0" />,
         title: "Our Approach",
-        description: "Combining cutting-edge technology with deep investigative experience and strong legal strategy. Our multi-disciplinary approach ensures we explore every avenue for recovery."
+        description: "Combining cutting-edge technology, deep investigative experience, and strong legal strategy to explore every avenue for recovery."
     }
 ]
 
@@ -79,14 +79,28 @@ const AboutUsPage = () => {
 
         <section className="py-20 md:py-28">
             <div className="container">
-                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    {values.map((value, index) => (
-                        <div key={index} className="text-center p-6">
-                            <div className="flex justify-center mb-4">{value.icon}</div>
-                            <h3 className="font-bold text-xl mb-2">{value.title}</h3>
-                            <p className="text-muted-foreground">{value.description}</p>
-                        </div>
-                    ))}
+                 <div className="grid md:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <Image 
+                            src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=1374&auto=format&fit=crop"
+                            alt="Our Values"
+                            width={600}
+                            height={700}
+                            className="rounded-lg shadow-2xl object-cover"
+                            data-ai-hint="teamwork strategy"
+                        />
+                    </div>
+                    <div className="space-y-8">
+                      {values.map((value, index) => (
+                          <div key={index} className="flex items-start gap-4">
+                              <div className="flex-shrink-0 pt-1">{value.icon}</div>
+                              <div>
+                                  <h3 className="font-bold text-xl mb-1">{value.title}</h3>
+                                  <p className="text-muted-foreground">{value.description}</p>
+                              </div>
+                          </div>
+                      ))}
+                    </div>
                 </div>
             </div>
         </section>
