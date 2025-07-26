@@ -46,7 +46,7 @@ export function HomeFaq() {
                 viewport={{ once: true }}
              >
                 <Image 
-                    src="https://images.unsplash.com/photo-1582653291997-0639994c454d?q=80&w=1470&auto=format&fit=crop"
+                    src="https://images.unsplash.com/photo-1559526324-c1f275fbfa32?q=80&w=1470&auto=format&fit=crop"
                     alt="FAQ section"
                     width={600}
                     height={700}
