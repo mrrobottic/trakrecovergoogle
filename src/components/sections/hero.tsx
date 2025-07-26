@@ -20,9 +20,6 @@ export function Hero() {
                         <Button asChild size="lg" style={{backgroundColor: 'hsl(var(--accent))', color: 'hsl(var(--accent-foreground))'}}>
                             <Link href="/claim">Start Your Free Consultation</Link>
                         </Button>
-                        <Button asChild size="lg" variant="outline">
-                            <Link href="#risk-assessment">Assess Your Risk</Link>
-                        </Button>
                     </div>
                 </div>
                 <div className="relative flex items-center justify-center">
