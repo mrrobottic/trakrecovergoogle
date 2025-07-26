@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Image from "next/image";
+import { MotionDiv } from "@/components/motion-div";
 
 const testimonials = [
   {
@@ -43,49 +44,67 @@ const testimonials = [
 
 export function Testimonials() {
   return (
-    <section id="testimonials" className="py-20 md:py-28">
-      <div className="container">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline">
+    <section 
+        id="testimonials" 
+        className="py-20 md:py-28 bg-cover bg-center bg-fixed"
+        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=1420&auto=format&fit=crop&ixlib=rb-4.0.3')"}}
+    >
+      <div className="absolute inset-0 bg-primary/80 backdrop-blur-sm"></div>
+      <div className="container relative">
+        <MotionDiv
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          viewport={{ once: true }}
+          className="text-center mb-12"
+        >
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline text-primary-foreground">
             Success Stories from Our Clients
           </h2>
-          <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
+          <p className="mt-4 max-w-2xl mx-auto text-lg text-primary-foreground/80">
             We are dedicated to our clients' success. Here's what they have to say about their experience with TRAKMINT.
           </p>
-        </div>
-        <Carousel
-          opts={{
-            align: "start",
-            loop: true,
-          }}
-          className="w-full max-w-4xl mx-auto"
+        </MotionDiv>
+        <MotionDiv
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
+            viewport={{ once: true }}
         >
-          <CarouselContent>
-            {testimonials.map((testimonial, index) => (
-              <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/2">
-                <div className="p-1">
-                  <Card className="h-full flex flex-col">
-                    <CardHeader className="flex flex-row items-center gap-4 pb-4">
-                      <Avatar className="h-16 w-16">
-                        <Image src={testimonial.avatar} alt={testimonial.name} width={64} height={64} data-ai-hint={testimonial.aiHint} className="object-cover"/>
-                        <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
-                      </Avatar>
-                      <div>
-                        <p className="font-bold text-lg">{testimonial.name}</p>
-                        <p className="text-sm text-muted-foreground">{testimonial.title}</p>
-                      </div>
-                    </CardHeader>
-                    <CardContent className="flex-grow">
-                      <p className="italic">&ldquo;{testimonial.quote}&rdquo;</p>
-                    </CardContent>
-                  </Card>
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
-        </Carousel>
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full max-w-4xl mx-auto"
+          >
+            <CarouselContent>
+              {testimonials.map((testimonial, index) => (
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/2">
+                  <div className="p-1">
+                    <Card className="h-full flex flex-col bg-background/80 backdrop-blur-sm">
+                      <CardHeader className="flex flex-row items-center gap-4 pb-4">
+                        <Avatar className="h-16 w-16">
+                          <Image src={testimonial.avatar} alt={testimonial.name} width={64} height={64} data-ai-hint={testimonial.aiHint} className="object-cover"/>
+                          <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
+                        </Avatar>
+                        <div>
+                          <p className="font-bold text-lg">{testimonial.name}</p>
+                          <p className="text-sm text-muted-foreground">{testimonial.title}</p>
+                        </div>
+                      </CardHeader>
+                      <CardContent className="flex-grow">
+                        <p className="italic">&ldquo;{testimonial.quote}&rdquo;</p>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
+        </MotionDiv>
       </div>
     </section>
   );

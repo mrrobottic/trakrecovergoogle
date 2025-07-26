@@ -6,6 +6,7 @@ import { EducationalResources } from '@/components/sections/educational-resource
 import { Testimonials } from '@/components/sections/testimonials';
 import { Faq } from '@/components/sections/faq';
 import { CtaSection } from '@/components/sections/cta-section';
+import { MotionDiv } from '@/components/motion-div';
 
 export default function Home() {
   return (
@@ -17,7 +18,14 @@ export default function Home() {
         <Testimonials />
         <EducationalResources />
         <Faq />
-        <CtaSection />
+        <MotionDiv
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.2 }}
+        >
+          <CtaSection />
+        </MotionDiv>
       </main>
       <Footer />
     </div>
