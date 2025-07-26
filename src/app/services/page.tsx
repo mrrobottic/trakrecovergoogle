@@ -13,29 +13,29 @@ const services = [
     icon: <DollarSign className="h-8 w-8 text-accent" />,
     title: "Comprehensive Fund Recovery",
     description: "Our primary mission is to reunite you with your stolen funds. We employ a multi-faceted approach combining advanced tracing technology, financial expertise, and established relationships with financial institutions and law enforcement agencies to maximize the chances of recovery.",
-    image: "https://images.unsplash.com/photo-1554224155-8d04421a1f33?q=80&w=1470&auto=format&fit=crop",
-    aiHint: "financial security",
+    image: "https://images.unsplash.com/photo-1556740758-90de374c12ad?q=80&w=1470&auto=format&fit=crop",
+    aiHint: "payment security",
   },
   {
     icon: <Search className="h-8 w-8 text-accent" />,
     title: "Scam Analysis & Investigation",
     description: "Understanding the scam is the first step to dismantling it. Our investigators analyze every detail of your case, from transaction records to communication logs, to build a strong foundation for recovery efforts. We trace the digital and financial footprints left by scammers to identify them and locate your money.",
-    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1470&auto=format&fit=crop",
-    aiHint: "investigation analysis",
+    image: "https://images.unsplash.com/photo-1586470253333-34914a243b8a?q=80&w=1470&auto=format&fit=crop",
+    aiHint: "digital investigation",
   },
   {
     icon: <Briefcase className="h-8 w-8 text-accent" />,
     title: "Legal & Financial Liaison",
     description: "Navigating the complex worlds of finance and law can be daunting. We act as your expert intermediary, communicating with banks, cryptocurrency exchanges, and legal authorities on your behalf. Our team ensures all necessary reports are filed correctly and that your case is presented with the urgency it deserves.",
-    image: "https://images.unsplash.com/photo-1560518883-ce09059ee41f?q=80&w=1374&auto=format&fit=crop",
-    aiHint: "legal justice",
+    image: "https://images.unsplash.com/photo-1589216532372-1c2a36790239?q=80&w=1374&auto=format&fit=crop",
+    aiHint: "legal documents",
   },
   {
     icon: <GraduationCap className="h-8 w-8 text-accent" />,
     title: "Prevention & Education",
     description: "Beyond recovery, we are committed to empowering you with knowledge. We provide personalized advice on how to secure your digital assets and avoid future scams. Our educational resources are designed to keep you informed about the latest fraud tactics and best practices for online safety.",
-    image: "https://images.unsplash.com/photo-1542744095-291d1f67b221?q=80&w=1470&auto=format&fit=crop",
-    aiHint: "education security",
+    image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1470&auto=format&fit=crop",
+    aiHint: "classroom learning",
   }
 ];
 
