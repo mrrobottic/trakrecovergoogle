@@ -26,7 +26,7 @@ export function Hero() {
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                         <Button asChild size="lg" style={{backgroundColor: 'hsl(var(--accent))', color: 'hsl(var(--accent-foreground))'}} className="shimmer-button transform hover:scale-105 transition-transform duration-300 font-bold text-lg py-7 px-8">
-                            <Link href="/claim">Start a Free Consultation</Link>
+                            <Link href="/claim">Start a Consultation</Link>
                         </Button>
                         <Button asChild size="lg" variant="outline" className="text-lg py-7 px-8">
                             <Link href="/faq">Learn How It Works</Link>
