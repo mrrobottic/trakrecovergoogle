@@ -29,7 +29,7 @@ export function Hero() {
                             <Link href="/claim">Start a Free Consultation</Link>
                         </Button>
                         <Button asChild size="lg" variant="outline" className="text-lg py-7 px-8">
-                            <Link href="/how-it-works">Learn How It Works</Link>
+                            <Link href="/faq">Learn How It Works</Link>
                         </Button>
                     </div>
                 </div>
