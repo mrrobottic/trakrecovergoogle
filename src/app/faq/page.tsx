@@ -41,7 +41,7 @@ const FAQPage = () => {
                                 </li>
                                 <li className="flex items-center gap-3">
                                     <Mail className="h-5 w-5 text-primary" />
-                                    <span>support@trakmint.com</span>
+                                    <span>support@trakmint.org</span>
                                 </li>
                                 <li className="flex items-center gap-3">
                                     <MessageSquare className="h-5 w-5 text-primary" />

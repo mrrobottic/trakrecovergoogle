@@ -36,27 +36,21 @@ export function Footer() {
             <ul className="space-y-2">
               <li className="flex items-center gap-2">
                 <Mail size={16} className="text-muted-foreground" />
-                <a href="mailto:support@trakmint.com" className="text-sm text-muted-foreground hover:text-foreground">
-                  support@trakmint.com
+                <a href="mailto:support@trakmint.org" className="text-sm text-muted-foreground hover:text-foreground">
+                  support@trakmint.org
                 </a>
               </li>
               <li className="flex items-center gap-2">
                 <Mail size={16} className="text-muted-foreground" />
-                <a href="mailto:Help@trakmint.com" className="text-sm text-muted-foreground hover:text-foreground">
-                  Help@trakmint.com
+                <a href="mailto:help@trakmint.org" className="text-sm text-muted-foreground hover:text-foreground">
+                  Help@trakmint.org
                 </a>
               </li>
               <li className="flex items-center gap-2">
                 <Phone size={16} className="text-muted-foreground" />
-                <span className="text-sm text-muted-foreground">+1 (800) 555-0199</span>
+                <span className="text-sm text-muted-foreground">+1 (928) 380-0840</span>
               </li>
             </ul>
-            <h3 className="font-semibold pt-4">Follow Us</h3>
-            <div className="flex space-x-4">
-              <Link href="#" className="text-muted-foreground hover:text-foreground"><Twitter size={20} /></Link>
-              <Link href="#" className="text-muted-foreground hover:text-foreground"><Facebook size={20} /></Link>
-              <Link href="#" className="text-muted-foreground hover:text-foreground"><Linkedin size={20} /></Link>
-            </div>
           </div>
         </div>
         <div className="mt-8 border-t pt-4 text-center text-sm text-muted-foreground">
